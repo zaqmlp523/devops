@@ -53,3 +53,7 @@ if [$? -eq 0 ]; then
   SIZE=$(du -sh "$BACKUP_DIR/$FILENAME" | cut -f1) 
 
 git ad .gitignore
+
+# 로그 기록
+echo "$(date '+%Y-%m-%d %H:%M:%S') 백업 완료 : $FILENAME" >> "$BACKUP_DIR/backup.log"
+echo "로그 기록 완료"
