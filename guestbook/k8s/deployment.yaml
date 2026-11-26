@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/zaqmlp523/guestbook:eee7006
+          image: ghcr.io/zaqmlp523/guestbook:85197db
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
